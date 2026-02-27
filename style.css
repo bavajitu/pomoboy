@@ -40,6 +40,24 @@ body {
   text-shadow: 0 0 1px #ebdbb2;
   letter-spacing: 6px;
   margin-bottom: 0.5rem;
+  cursor: pointer;
+  transition: opacity 0.1s ease;
+}
+
+.timer:hover {
+  opacity: 0.8;
+}
+
+.timer:active {
+  opacity: 0.6;
+}
+
+.presets-row {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .presets {
@@ -75,19 +93,13 @@ body {
   border-color: #ebdbb2;
 }
 
-.controls {
-  display: flex;
-  gap: 2rem;
-  margin-top: 0.5rem;
-}
-
-.control-btn {
+.reset-btn {
   background: transparent;
   border: 2px solid #ebdbb2;
   color: #ebdbb2;
-  font-size: 3rem;
-  width: 80px;
-  height: 80px;
+  font-size: 2rem;
+  width: 35px;
+  height: 35px;
   cursor: pointer;
   transition: all 0.1s ease;
   display: flex;
@@ -97,7 +109,7 @@ body {
   font-family: "Courier New", Courier, monospace;
 }
 
-.control-btn:hover {
+.reset-btn:hover {
   background: #ebdbb2;
   color: #000000;
 }
@@ -111,9 +123,9 @@ body {
     padding: 0.4rem 0.9rem;
     min-width: 70px;
   }
-  .control-btn {
-    width: 65px;
-    height: 65px;
-    font-size: 2.5rem;
+  .reset-btn {
+    width: 45px;
+    height: 45px;
+    font-size: 1.8rem;
   }
 }
